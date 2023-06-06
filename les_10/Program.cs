@@ -5,25 +5,25 @@ int[] sortingArray = CountingSortExtended(array);
 Console.WriteLine(string.Join(", ", sortingArray));
 // Console.WriteLine(array.Max());
 
-void CountingSort(int[] inputArray) // Метод для цифр (от 0 до 9)
-{
-    int[] counters = new int[10]; // Массив повторений
-    for (int i = 0; i < inputArray.Length; i++)
-    {
-        counters[inputArray[i]]++;
-        // int ourNumber = inputArray[i];
-        // counters[ourNumber]++;
-    }
-    int index = 0;
-    for (int i = 0; i < counters.Length; i++)
-    {
-        for (int j = 0; j < counters[i]; j++)
-        {
-            inputArray[index] = i;
-            index++;
-        }
-    }
-}
+// void CountingSort(int[] inputArray) // Метод для цифр (от 0 до 9)
+// {
+//     int[] counters = new int[10]; // Массив повторений
+//     for (int i = 0; i < inputArray.Length; i++)
+//     {
+//         counters[inputArray[i]]++;
+//         // int ourNumber = inputArray[i];
+//         // counters[ourNumber]++;
+//     }
+//     int index = 0;
+//     for (int i = 0; i < counters.Length; i++)
+//     {
+//         for (int j = 0; j < counters[i]; j++)
+//         {
+//             inputArray[index] = i;
+//             index++;
+//         }
+//     }
+// }
 
 int[] CountingSortExtended(int[] inputArray)
 {
